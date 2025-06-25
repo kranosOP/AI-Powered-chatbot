@@ -1,7 +1,8 @@
 
 #  AI-Powered Customer Support Chatbot (POC)
 
-A backend proof-of-concept chatbot built with the **Godspeed Framework**, integrated with **OpenAI GPT**, **Redis**, and **WebSockets**. It intelligently handles routine queries and escalates complex issues to human agents.
+This proof of concept demonstrates a complete AI-powered customer support chatbot backend using the Godspeed framework with OpenAI integration, Redis for session management, and WebSocket support.
+
 
 ---
 
