@@ -1,12 +1,13 @@
 
-#  AI-Powered Customer Support Chatbot (POC)
-
-This proof of concept demonstrates a complete AI-powered customer support chatbot backend using the Godspeed framework with OpenAI integration, Redis for session management, and WebSocket support.
-
 <p align="center">
   <img src="ChatBot.png" alt="AI Chatbot Banner" width="700"/>
 </p>
 
+<h1 align="center">🤖 AI-Powered Customer Support Chatbot (POC)</h1>
+
+<p align="center">
+This proof of concept demonstrates a complete AI-powered customer support chatbot backend using the Godspeed framework with OpenAI integration, Redis for session management, and WebSocket support.
+</p>
 ---
 
 ##  Project Structure
