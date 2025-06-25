@@ -1,11 +1,11 @@
 
-# 🤖 AI-Powered Customer Support Chatbot (POC)
+#  AI-Powered Customer Support Chatbot (POC)
 
 A backend proof-of-concept chatbot built with the **Godspeed Framework**, integrated with **OpenAI GPT**, **Redis**, and **WebSockets**. It intelligently handles routine queries and escalates complex issues to human agents.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 src/
@@ -36,15 +36,15 @@ src/
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
-### ✅ Core Chat Flow
+###  Core Chat Flow
 - Real-time messaging via **WebSocket**
 - AI-powered responses using **OpenAI GPT**
 - Redis-based **session persistence**
 - Chat logs stored for **tracking & analytics**
 
-### 🧠 Intent Classification
+###  Intent Classification
 Detects query types such as:
 - Account/Login Issues
 - Billing Queries
@@ -56,7 +56,7 @@ Uses:
 - Keyword matching
 - GPT-based classification
 
-### 🚨 Escalation Logic
+###  Escalation Logic
 Triggers include:
 - Negative sentiment (via sentiment analysis)
 - Frustration keywords (e.g., “manager”, “agent”)
@@ -65,9 +65,9 @@ Triggers include:
 
 ---
 
-## 🧱 Development Plan
+##  Development Plan
 
-### 📅 Phase 1: Setup (Week 1)
+###  Phase 1: Setup (Week 1)
 - Initialize Godspeed project:
 ```bash
 npx @godspeedsystems/cli create chatbot-poc
@@ -98,24 +98,24 @@ datasources:
     model: "gpt-3.5-turbo"
 ```
 
-### 📅 Phase 2: AI Integration (Week 2)
+###  Phase 2: AI Integration (Week 2)
 - Set up OpenAI client and prompts
 - Implement intent classification (keywords + GPT)
 - Generate hybrid responses (templates + AI)
 
-### 📅 Phase 3: Sessions & WebSocket (Week 3)
+###  Phase 3: Sessions & WebSocket (Week 3)
 - Implement Redis session storage & TTL
 - WebSocket message handling, reconnection, and error logic
 
-### 📅 Phase 4: Escalation & Analytics (Week 4)
+###  Phase 4: Escalation & Analytics (Week 4)
 - Define escalation logic (rules, sentiment, keywords)
 - Log interactions and collect analytics
 
 ---
 
-## 🧪 Sample Code
+##  Sample Code
 
-### 🔗 OpenAI Integration
+###  OpenAI Integration
 ```ts
 import OpenAI from 'openai';
 
@@ -149,7 +149,7 @@ export class OpenAIClient {
 }
 ```
 
-### 🚨 Escalation Logic
+###  Escalation Logic
 ```ts
 export class EscalationManager {
   shouldEscalate(conversation: any, userMessage: string): boolean {
@@ -168,49 +168,49 @@ export class EscalationManager {
 
 ---
 
-## ✅ POC Success Criteria
+##  POC Success Criteria
 
-### 📋 Functional Goals
+###  Functional Goals
 - [ ] Respond to 5+ customer query types
 - [ ] Store & recall session history
 - [ ] Handle 3+ escalation trigger types
 - [ ] Real-time messaging via WebSocket
 - [ ] Accurate Redis session persistence
 
-### ⚙️ Performance Benchmarks
-- ⏱ Response time < 2 seconds
-- 👥 Handle 10+ concurrent chats
-- 🔄 Successful escalation < 30 seconds
-- 📶 95%+ uptime during testing
+###  Performance Benchmarks
+-  Response time < 2 seconds
+-  Handle 10+ concurrent chats
+-  Successful escalation < 30 seconds
+-  95%+ uptime during testing
 
 ---
 
-## 🧪 Testing Strategy
+## Testing Strategy
 
-### ✅ Unit Tests
+###  Unit Tests
 - AI response logic
 - Intent classification
 - Escalation rules
 - Redis session I/O
 
-### 🔁 Integration Tests
+###  Integration Tests
 - Full conversation lifecycle
 - WebSocket + Redis + OpenAI flow
 
-### 🔧 Load Testing
+###  Load Testing
 - Concurrent sessions
 - Redis stress test
 - WebSocket load
 
 ---
 
-## 🚀 Deployment Strategy
+##  Deployment Strategy
 
-### 🐳 Dockerization
+###  Dockerization
 - Container-based deployment
 - Health checks and live probes
 
-### 🔒 Security
+###  Security
 - Input sanitization
 - Secure WebSockets
 - API rate limiting
