@@ -3,6 +3,9 @@
 
 This proof of concept demonstrates a complete AI-powered customer support chatbot backend using the Godspeed framework with OpenAI integration, Redis for session management, and WebSocket support.
 
+<p align="center">
+  <img src="ChatBot.png" alt="AI Chatbot Banner" width="300"/>
+</p>
 
 ---
 
