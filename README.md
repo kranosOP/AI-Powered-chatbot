@@ -64,7 +64,7 @@ Uses:
 ###  Escalation Logic
 Triggers include:
 - Sentiment analysis score below threshold (Negative Emotion)
-- Keywords indicating frustration ("angry", "disappointed", "manager")
+- Keywords indicating frustration ("angry", "disappointed" )
 - Multiple failed resolution attempts
 - Explicit request for human support
 - Complex technical issues beyond AI scope
