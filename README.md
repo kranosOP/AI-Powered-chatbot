@@ -46,8 +46,8 @@ src/
 ###  Core Chat Flow
 - Real-time messaging via **WebSocket**
 - AI-powered responses using **OpenAI GPT**
-- Redis-based **session persistence**
-- Chat logs stored for **tracking & analytics**
+- Redis-based **session persistence** with session ID
+- The full interaction (user message + AI response) is recorded for **tracking & analytics**
 
 ###  Intent Classification
 Detects query types such as:
@@ -63,10 +63,11 @@ Uses:
 
 ###  Escalation Logic
 Triggers include:
-- Negative sentiment (via sentiment analysis)
-- Frustration keywords (e.g., “manager”, “agent”)
-- Unresolved repeated attempts
+- Sentiment analysis score below threshold (Negative Emotion)
+- Keywords indicating frustration ("angry", "disappointed", "manager")
+- Multiple failed resolution attempts
 - Explicit request for human support
+- Complex technical issues beyond AI scope
 
 ---
 
